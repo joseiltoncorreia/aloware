@@ -1,0 +1,16 @@
+# Log files
+*.log
+*.html
+*.xml
+*.pabotsuitnames
+mochawesome.json
+
+# log folder
+log/
+
+# Folders
+node_modules/
+videos/
+screenshots/
+reports/
+mochawesome-report/
