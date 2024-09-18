@@ -36,5 +36,5 @@ This project contains end-to-end automated tests for the Aloware Homepage, using
  - Note: Due to time limitation, only a few call-to-action buttons, some menus, and submenus were validated, but more tests can be added by appending the appropriate lines to the JSON files within the cypress/fixture folder.
 
 ## Reporting
-[Cypress_Reports]: Cypress generates detailed HTML reports with information about passed and failed tests, including screenshots and console logs. These reports are saved in the *cypress/reports* folder.
+[Cypress_Reports]: Cypress generates detailed HTML and Junit reports with information about passed and failed tests, including screenshots and console logs. These reports are saved in the *cypress/reports* folder.
 [GitHub_Actions]: The workflow publishes test results in JUnit format to the GitHub Actions interface.
