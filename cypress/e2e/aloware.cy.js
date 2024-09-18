@@ -1,12 +1,14 @@
 /// <reference types="cypress" />
 
+import { LOCATORS } from '../support/locators';
+
 describe('Aloware Homepage', () => {
   beforeEach(() => {
     cy.visit('/')
     cy.title().should('eq', 'Top-Rated Contact Center Software | Built For Your Favorite CRM')
   })
 
-  it('Scenario 6: Verify navigation bar', () => {
+  it.only('Scenario 6: Verify navigation bar', () => {
     const menuItems = [
       'Solutions',
       'Features',
@@ -16,7 +18,7 @@ describe('Aloware Homepage', () => {
     ]
 
     // Validade all the menus options in the Aloware homepage
-    cy.get('#header-menu').within(() => {
+    cy.get(LOCATORS.homePage.mainMenu).within(() => {
       menuItems.forEach(item => {
         cy.contains('a', item).should('be.visible')
       })
