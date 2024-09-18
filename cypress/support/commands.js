@@ -33,5 +33,5 @@ Cypress.Commands.add('goToAllSubmenus', (menubar, subMenuBar, urlTitle) => {
     cy.get(`#header-menu a:contains(${menubar})`).realHover()
     cy.contains('a', subMenuBar).click()
     cy.title().should('eq', urlTitle)
-    cy.screenshot(`Submenu Page - ${subMenuBar}`)
+    cy.scrollTo('top')
 })
